@@ -46,6 +46,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
 
                         .requestMatchers("/assets/**").permitAll()
+                        .requestMatchers("/uploads/**").permitAll()               
 
                         .requestMatchers("/quiz/**").permitAll()
                         .requestMatchers("/questions/**").permitAll()
