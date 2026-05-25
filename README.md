@@ -351,7 +351,7 @@ Database is hosted using :
 
 #### # Leaderboard APIs
 
-- GET	  -  /leaderboard/{quizId}
+- GET	  -  /leaderboard
 
 #### # Admin APIs
 
