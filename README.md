@@ -343,7 +343,8 @@ Database is hosted using :
 
 #### # Question APIs
 
-- GET	  -  /questions/{quizId}
+- GET	  -  /questions/quiz/{quizId}
+- GET   -  /questions/check/{quizId}
 
 #### # Result APIs
 
