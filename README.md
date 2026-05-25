@@ -327,7 +327,7 @@ Database is hosted using :
 
 ## ---- REST API ENDPOINTS (API DOCUMENTATION)  -----
 
-### APIs can be accessed using "url + endpoints" on webrowser or Postman as "url/endpoint".
+#### APIs can be accessed using "url + endpoints" on webrowser or Postman as "url/endpoint".
 
 #### # Authentication APIs
 
@@ -337,6 +337,7 @@ Database is hosted using :
 #### # Quiz APIs
 
 - GET	  -  /quiz/latest
+- GET	  -  /quiz/closed
 - GET	  -  /quiz/ongoing
 - GET	  -  /quiz/{id}
 
