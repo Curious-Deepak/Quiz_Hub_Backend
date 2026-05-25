@@ -1,16 +1,18 @@
 # QUIZ APPLICATION BACKEND DETAILS
 
-Project Name : Quiz Hub - Online Quiz Tournament WEB Application
+#### Project Name : Quiz Hub - Online Quiz Tournament WEB Application
 
-Backend Technology : Spring Boot
+#### Backend Technology : Spring Boot
 
-Database : MySQL
+#### Database : MySQL
 
-Architecture Style : REST API Based Monolithic Architecture
+#### Architecture Style : REST API Based Monolithic Architecture
 
-Build Tool : Maven
+#### Build Tool : Maven
 
-Programming Language : Java
+#### Programming Language : Java
+
+#### Development Tools : IntelliJ IDEA, MySQL, Railway (Deployment)
 
 ---
 
@@ -188,13 +190,9 @@ The application uses external asset storage instead of static resource folders.
 ### Custom Image Upload
 
 - The project supports dynamic image handling for quiz thumbnails
-
 - Admin will send custom made poster/image for quiz and that will be send to backend
-
 - On backend this images will be stored dynamically in the folder (upload/assets)
-
 - Images will be renamed dynmically as randomAlphabets_imageName.type(eg_image.png) for handing same name clash
-
 - The url (folder name & renamed image) will be created and sent to databse and stored in databse dynamically
 
 Features :
@@ -327,10 +325,48 @@ Database is hosted using :
 
 ---
 
+## ---- REST API ENDPOINTS (API DOCUMENTATION)  -----
+
+### APIs can be accessed using "url + endpoints" on webrowser or Postman as "url/endpoint".
+
+#### # Authentication APIs
+
+- POST	 -  /auth/register
+- POST	 -  /auth/login
+
+#### # Quiz APIs
+
+- GET	  -  /quiz/latest
+- GET	  -  /quiz/ongoing
+- GET	  -  /quiz/{id}
+
+#### # Question APIs
+
+- GET	  -  /questions/{quizId}
+
+#### # Result APIs
+
+- GET	  -  /result/status
+
+#### # Leaderboard APIs
+
+- GET	  -  /leaderboard/{quizId}
+
+#### # Admin APIs
+
+- POST	  -  /admin/createQuiz
+- PUT	    -  /admin/updateQuiz/{id}
+- DELETE	-  /admin/deleteQuiz/{id}
+
+
+---
+
 ## ----    SUMMARY   ----
 
 The Quiz Application backend is designed to provide a scalable, maintainable, and 
 efficient system for online quiz management. The backend supports quiz creation, 
 result processing, real-time updates, participant tracking, and structured database 
 management using Spring Boot and MySQL.
+
+---
 
