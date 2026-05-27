@@ -127,28 +127,28 @@ Main Entities :
 
 ## ----   QUIZ CREATION FLOW   ----
 
-1. Admin creates quiz from frontend.
-2. Quiz data is sent as JSON.
-3. Backend receives DTO request.
-4. Quiz entity is created.
-5. Questions are mapped.
-6. Options are linked to questions.
-7. Correct answers are stored.
-8. Data is saved into MySQL database.
-9. Live updates are pushed using WebSocket.
+- Admin creates quiz from frontend.
+- Quiz data is sent as JSON.
+- Backend receives DTO request.
+- Quiz entity is created.
+- Questions are mapped.
+- Options are linked to questions.
+- Correct answers are stored.
+- Data is saved into MySQL database.
+- Live updates are pushed using WebSocket.
 
 ---
 
 ## ----   QUIZ SUBMISSION FLOW   ----
 
-1. User attempts quiz.
-2. Selected answers are sent to backend.
-3. Backend validates answers.
-4. Score is calculated.
-5. Result entity is created.
-6. One submission per email is checked.
-7. Participant count increases after successful submission.
-8. Final result is returned to frontend.
+- User attempts quiz.
+- Selected answers are sent to backend.
+- Backend validates answers.
+- Score is calculated.
+- Result entity is created.
+- One submission per email is checked.
+- Participant count increases after successful submission.
+- Final result is returned to frontend.
 
 ---
 
@@ -156,17 +156,18 @@ Main Entities :
 
 The backend automatically :
 
-* Checks correct answers
-* Calculates total score
-* Stores result history
-* Prevents duplicate submissions
-* Generates final performance summary
+- Checks correct answers
+- Calculates total score
+- Stores result history
+- Prevents duplicate submissions
+- Generates final performance summary
 
 ---
 
 ## ----   WEBSOCKET IMPLEMENTATION   ----
 
 WebSocket is used for live quiz updates.
+
 Purpose :
 
 * Push new quiz updates instantly
@@ -328,6 +329,8 @@ Database is hosted using :
 ## ---- REST API ENDPOINTS (API DOCUMENTATION)  -----
 
 #### APIs can be accessed using "url + endpoints" on webrowser or Postman as "url/endpoint".
+
+* API Example : https://quizhubbackend-production.up.railway.app/quiz/all
 
 #### # Authentication APIs
 
